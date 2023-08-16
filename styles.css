@@ -1,9 +1,9 @@
 * {
-    border: 2px red solid;
+    /*border: 2px red solid;*/
 }
 
 body {
-    font-family:'Arial';
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -11,12 +11,15 @@ body {
 }
 
 .hero {
+    flex: 1;
     background-color: #1F2937;
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: #E5E7EB
+    color: #E5E7EB;
 }
+
+
 
 .header {
     color: #F9FAF8;
@@ -24,7 +27,8 @@ body {
     align-items: center;
     justify-content: space-between;
     flex: auto;
-    width: 66.66%;
+    width: 70%;
+    margin-bottom: 80px;
 }
 
 .logo {
@@ -43,10 +47,20 @@ ul {
 }
 
 .top-content {
-    margin-bottom: 36px;
-    width: 66.66%;
+    margin-bottom: 100px;
+    width: 71%;
     display: flex;
     align-items: center;
+    gap: 28px;
+
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 10px;
 }
 
 button {
@@ -54,24 +68,44 @@ button {
     color: #F9FAF8;
     border-radius: 5px;
     padding: 8px 32px;
-    border-style: none
+    border-style: none;
+    font-size: 14px;
+    font-weight: bold;
 }
 
 .information {
-
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    padding: 4%;
+    align-items: center;
+    gap: 50px;
 }
 
 .cards {
-
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    gap: -5px;
 }
 
 .card {
-
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    justify-content:center;
+    text-align: center;
+    max-width: 200px;
+    gap: 15px;
+    padding: 15px;  
+    color: #1F2937; 
 }
 
 .card img {
-    border: 2px blue;
-    border-radius: 5px;
+    border: 5px #3882F6 solid;
+    border-radius: 15px;
+    max-width: 150px;
 }
 
 .card-text {
@@ -80,22 +114,34 @@ button {
 
 .quotes {
     background-color: #E5E7EB;
+    color: #1F2937;
+    display: flex;
+    flex-direction: column;
+    padding: 7.5% 20%;
+    flex: 1;
 }
 
 .call {
-
+    display: flex;
+    flex: 1;
 }
 
 .bottom-container {
     background-color: #3882F6;
     margin: 52px;
-    padding: 50px;
+    padding: 50px 150px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    color: #E5E7EB;
+    gap: 30px;
 }
+
 
 .footer {
     background-color: #1F2937;
     color: #E5E7EB;
     align-self: stretch;
     text-align: center;
-    padding: 5px;
+    padding: 50px;
 }
